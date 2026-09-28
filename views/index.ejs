@@ -48,6 +48,15 @@
             <button type="submit">Check Riding Conditions</button>
 
         </form>
+        <% if (temperature !== undefined) { %>
+
+            <h2><%= recommendation %></h2>
+
+            <p>Temperature: <%= temperature %> °F</p>
+            <p>Precipitation: <%= precipitation %> mm</p>
+            <p>Wind Speed: <%= windSpeed %> mph</p>
+
+        <% } %>
     </main>
 
 </body>
